@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+<!-- ( ! + Enter ) O que está em cima é pré-definido-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+<!-- Link para o website google fonts, a font usava vai ser o Montserrat -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<!-- Link para o website CDNJS (font-awesome) para usar os pequenos ícons em butões -->
+    <link rel="tab icon" href="img/max.png">
+<!-- Link para o website CDNJS (font-awesome) para usar os pequenos ícons em butões -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-fullscreen@1.0.2/dist/leaflet.fullscreen.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-northarrow@1.3.0/src/L.Control.NorthArrow.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+
+</head>
+<body>
+    <nav class="navbar" id="index">
+            <div class="logo-img">
+                <a href="index.html"> <!-- link para o menu inicial -->
+                    <img src="img/signature.png" alt="Logo" class="logo-img"> <!-- que é acessível ao clicar na imagem -->
+                </a>
+            </div>
+            <div class="container">
+            <a href="#hero"></a>
+            <div class="nav-links">  <!-- Menu da navbar  -->
+                <ul>
+                    <li>
+                        <a href="#index"> Home </a>
+                    </li>
+                    <li>
+                      <a href="#competencias"> Competences</a>
+                  </li>
+                    <li>
+                        <a href="#academico"> Academic Background </a>
+                    </li>
+                    <li>
+                        <a href="#profissional"> Professional Background</a>
+                    </li>
+                    <!--
+                    <li>
+                      <a href="#storymaps"> Story Map </a>
+                  </li>
+                    -->
+                    <li>
+                      <a class="btn" href="#contacto">Contact</a>
+                  </li>
+                </ul>
+            </div>
+    </nav>
+    <section class="hero">
+        <div class="container">
+        <div class="hero-content">
+                <h1 class="text-xxl">
+                    Curriculum Vitae 
+                </h1>
+                <p class="hero-text">
+                    Rodrigo Sousa 
+                </p>
+        <div class="first">
+          <div class="bio-panel">
+            <div class="panel-toggle">
+              <button class="toggle-btn active" id="btn-bio" onclick="showBioPanel('bio')">About Me</button>
+              <button class="toggle-btn" id="btn-cloud" onclick="showBioPanel('cloud')">Other skills</button>
+            </div>
+
+            <!-- Bio content -->
+            <div id="panel-bio" class="panel-content">
+              <div class="text-small">
+                I am a professional in the field of Geographic Information Systems (GIS) and Risk Management,
+                with solid academic experience in spatial analysis, data management and risk assessment.
+                I am proficient in ESRI software and in developing strategic solutions for land use planning and I excel in risk modelling in different software.
+                My professional experience covers a variety of roles, including emergency planning and collaboration with security organisations.
+                I believe I have a solid grounding in data-driven decision making and a passion for applying GIS in security and planning contexts.
+              </div>
+            </div>
+
+            <!-- Word Cloud  -->
+             
+             <!-- Word Cloud (3D Sphere) -->
+            <div id="panel-cloud" class="panel-content" style="display:none">
+              <style>
+                #sc-wrap{position:relative;width:100%;height:290px;user-select:none;}
+                #sc-canvas{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);pointer-events:none;}
+                #sc-words{position:absolute;left:0;top:0;width:100%;height:290px;cursor:grab;overflow:visible;}
+                #sc-words.sc-grabbing{cursor:grabbing;}
+                .sc-w{position:absolute;white-space:nowrap;font-family:'Montserrat',sans-serif;font-weight:700;transform-origin:center center;pointer-events:auto;}
+              </style>
+              <div id="sc-wrap">
+                <canvas id="sc-canvas"></canvas>
+                <div id="sc-words"></div>
+              </div>
+            
+            </div>
+
+          </div><!-- end bio-panel -->
+
+          <div class="right-panel">
+            <img class="hero-img" src="img/perfil.jpg" alt="perfil">
+            <a href="/Resume_CV2025.pdf" download="CurriculoRodrigo.pdf">
+              <button class="botao">
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="mysvg">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g id="Interface / Download">
+                      <path id="Vector" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" stroke="#f1f1f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                  </g>
+                </svg>
+                <span class="texto">Curriculum Vitae</span>
+              </button>
+            </a>
+          </div><!-- end right-panel -->
+
+        </div><!-- end first -->
+        </div>
+    </section>
+
+        <!-- Seccção das competências  -->
+        <div id="particles-js"></div>
+  <section class="competencias" id="competencias"> 
+    <h2>Competences</h2>
+    <p class="subtitle">
+       <strong>Software Skills </strong>
+    </p>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <!-- competencias Items -->
+        <div class="swiper-slide">
+          <div class="competencias-item">
+            <img src="img/arcgis.png" alt="Arcgis">
+            <p>ArcGIS Pro - Advanced geospatial mapping and analysis software, used to create, edit and visualise 2D and 3D GIS data, widely used in cartography and urban planning.
+            </p>
+            <h4>ESRI</h4>
+            <span>Nível 5</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="competencias-item">
+            <img src="img/qgis.png" alt="qgis">
+            <p>QGIS - Open source software for Geographic Information Systems (GIS), used for analysing, editing and visualising spatial data.</p>
+            <h4>Open Source</h4>
+            <span>Nível 5</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="competencias-item">
+            <img src="img/Iber.png" alt="Iber">
+            <p>IBER - 2D hydrodynamic modelling in river and estuarine environments, based on shallow water equations</p>
+            <h4>Iberaula</h4>
+            <span>Nível 3</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="competencias-item">
+            <img src="img/matlab.png" alt="matlab">
+            <p>MATLAB - Numerical computing environment and programming language for analysing data, simulating and creating algorithms.</p>
+            <h4>MathWorks</h4>
+            <span>Nível 2</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="competencias-item">
+            <img src="img/CAD.png" alt="matlab">
+            <p>AutoCAD - Computer Aided Design (CAD) used to create 2D technical drawings and 3D models.</p>
+            <h4>Autodesk software</h4>
+            <span>Nível 4</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="competencias-item">
+            <img src="img/hec.png" alt="hecras">
+            <p>HEC-RAS - River Analysis System Hydrologic Engineering Center - Software for modelling hydraulic systems, allowing simulations of river flow, flooding and river infrastructure.</p>
+            <h4>Hydrologic Engineering Center</h4>
+            <span>Nível 4</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="competencias-item">
+            <img src="img/Sfincs.png" alt="matlab">
+            <p>SFINCS - Super Fast Inundation of CoastS - Software for modelling hydraulic systems, with the possibiliy to simulate compound flooding (Fluvial;Pluvial;Coastal;Surge) .</p>
+            <h4>Deltares</h4>
+            <span>Nível 2</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="competencias-item">
+            <img src="img/claude.jpg" alt="claude">
+            <p> Claude - Artificial intelligence model designed to generate text, answer questions and carry out tasks based on natural language. </p>
+            <h4>Anthropic</h4>
+            <span>Nível 5</span>
+          </div>
+        </div>
+      </div>
+      <!-- Setas de navegação-->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <!-- Paginação -->
+      <div class="swiper-pagination"></div>
+    </div>
+     </section>
+
+  <div class="academico" > 
+     <section class="academic-section" id="academico">
+      <div class="hero-content">
+        <h1 class="text-xl1">
+           Academic Background  
+        </h1>
+      <ul class="academico-list">
+        <li class="academico-item">
+          <div class="logo">
+            <img src="img/FLUP.png" alt="U. Porto Logo" />
+          </div>
+          <div class="academico-texto">
+            <h3>September 2023 - Ongoing</h3>
+            <p><strong>Faculty de Literature- University of Porto. Porto, Portugal</strong></p>
+            <p>Masters in Geographic Information Systems and Urban Planning</p>
+            <p>Web: <a href="https://sigarra.up.pt/flup/pt/cur_geral.cur_view?pv_curso_id=461" class="sitio-link">University of Porto</a></p>
+          </div>
+        </li>
+        <li class="academico-item">
+          <div class="logo">
+            <img src="img/FCT.png" alt="Another Logo" />
+          </div>
+          <div class="academico-texto">
+            <h3>September 2019 - June 2023</h3>
+            <p><strong>Faculty of Science and Technology - University of Azores.
+              São Miguel, Portugal
+            </strong></p>
+            <p>Bachelor's degree in Civil Protection and Risk Assessment </p>
+            <p>Web: <a href="https://fct.uac.pt/cursos/licenciatura-em-protecao-civil-e-gestao-de-riscos/" class="sitio-link">Universidade dos Açores</a></p>
+          </div>
+        </li>
+        <li class="academico-item"> 
+          <div class="logo">
+            <img src="img/FCT.png" alt="Another Logo" />
+          </div>
+          <div class="academico-texto">
+            <h3>February - June 2023</h3>
+            <p><strong>Faculty of Science and Technology - University of Azores.
+              São Miguel, Portugal</strong></p>
+            <p>Isolate Unit - Ecotoxicology </p>
+            <p>Web: <a href="https://uac.pt/ensino/disciplina.php?id=82182&l=PT&f=FCT&curId=4085" class="sitio-link">Universidade dos Açores</a></p>
+          </div>
+        </li>
+        <li class="academico-item">
+          <div class="logo">
+            <img src="img/hi.png" alt="Another Logo" />
+          </div>
+          <div class="academico-texto">
+            <h3>January - July 2022</h3>
+            <p><strong>Faculty of Engineering and Earth Sciences </strong></p>
+            <p>Erasmus+ 
+            </p>
+            <p> Remote Sensing || Geochemistry || Glacial Geology 
+            </p>
+            <p>Web: <a href="https://www.hi.is/" class="sitio-link">Háskoli Islands</a></p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="professional-section" id="profissional">
+      <div class="hero-content">
+        <h1 class="text-xl1">
+           Professional Background  
+        </h1>
+      <ul class="academico-list">
+        <li class="academico-item">
+          <div class="logo">
+            <img src="img/LREC.png" alt="U. Porto Logo" />
+          </div>
+          <div class="academico-texto1">
+            <h3>April 2026 - Ongoing</h3>
+            <p><strong> Data analyst - Department of Hy <br> Laboratório Regional de Engenharia Civl  </strong> 
+              <p>• Hydrological and hydraulic modelling of Madeira’s stream systems using HEC-HMS and HEC-RAS.</p>
+              <p>• Support flood hazard analysis and risk assessment through scenario-based flood simulations. </p>
+              <p>• Initial application of the SWAN, MIKE21 & SFINC's model (<a href="https://www.deltares.nl/en/software-and-data/products?types=Hydrodynamics%20and%20morphology" class="sitio-link">Deltares</a>) to investigate coastal hydrodynamic behaviour and its interaction with fluvial processes.</p>
+            <p>Web: <a href="https://www.lrec.pt/" class="sitio-link1">LREC.pt</a></p>
+          </div>
+        </li>
+        <li class="academico-item">
+          <div class="logo">
+            <img src="img/apram.png" alt="U. Porto Logo" />
+          </div>
+          <div class="academico-texto1">
+            <h3>August - October 2024</h3>
+            <p><strong> GIS Specialist - Port Operations and Security Department <br> APRAM - Administração dos Portos da Região Autónoma da Madeira</strong></p>
+            <p> - Integration of ESRI sotware in port operations</p>
+            <p> - Development of a Preliminary Intervention || Safety & Security for Port of Funchal.</p>
+            <p>Web: <a href="https://apram.pt/" class="sitio-link1">APRAM.pt</a></p>
+          </div>
+        </li>
+        <li class="academico-item">
+          <div class="logo">
+            <img src="img/pxo.png" alt="Another Logo" />
+          </div>
+          <div class="academico-texto1">
+            <h3>01-31 August 2022</h3>
+            <p><strong>Technical Advisor || Civil Protection department  <br> Câmara Municipal do Porto Santo  
+            </strong></p>
+            <p> - Topographical Survey for the municipality; </p>
+            <p> - Development of an Emergency Plan for a local event. </p>
+            <p>Web: <a href="https://cm-portosanto.pt/" class="sitio-link1">CMPS.pt</a></p>
+          </div>
+        </li>
+        <li class="academico-item">
+          <div class="logo">
+            <img src="img/isn.png" alt="Another Logo" />
+          </div>
+          <div class="academico-texto1">
+            <h3>July 2019 - September 2021</h3>
+            <p><strong>Lifeguard <br> Associação de Nadadores-Salvadores dos Açores </strong></p>
+            <p> - Preventing accidents by advising bathers on safety rules and safe behaviour
+               practices; </p>
+              <p> - Collaboration with local security and emergency teams
+                to ensure rapid and effective responses in critical situations   </p>
+            <p>Web: <a href="https://www.acoresansa.pt/a-ansa" class="sitio-link1"> ANSA.pt</a></p>
+          </div>
+        </li>
+        <li class="academico-item">
+          <div class="logo">
+            <img src="img/abm.png" alt="Another Logo" />
+          </div>
+          <div class="academico-texto1">
+            <h3>June 2017 - June 2019</h3>
+            <p><strong>Basketball Referee <br> Associação de Basquetebol da Madeira </strong></p>
+            <p> - Ability to make fast decisions, communicate and remain neutral. </p>
+            <p>Web: <a href="https://www.facebook.com/abmadeira.basquetebol" class="sitio-link1">ABM.pt</a></p>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <!-- 
+    <section 
+    class="academico" id="storymaps">
+      <div class="hero-content">
+        <h1 class="text-xl">
+           Story Map  
+        </h1>
+           <div class="storymap-container">
+            <iframe src="https://arcg.is/y9SCP2" class="storymaps" frameborder="0" tabindex="-2" allowfullscreen></iframe>
+            </div>
+      </div>  
+      <script src="js/scroll.js" defer> </script>
+    </section>
+
+    <section class="academico-section"id="miniprojeto">
+      <div class="hero-content">
+        <h1 class="text-xl">
+           Mini-projeto   
+        </h1>
+       Área de informações 
+      <div class="info">
+        <h2>Porto do Funchal </h2> <br> 
+        <p> 
+          O mapa apresenta características do Porto do Funchal, como pontos de UPS e contadores, Reservatórios e Redes de Condutas. Estes dados foram levantados em função de possíveis
+            galgamentos costeiros, cuja área de risco foi avaliada pela APRI - Avaliação Preliminar de Risco de Inundação, área esta também disposta no mapa. 
+        </p>
+        O mapa também dispõe da rede de estações meteorológicas da Ilha da Madeira, que dispõem de um buffer de 1km. Cada estação tem os valores médios de precipitação (mm/ano) e temperatura (°C)  dos últimos 
+        15 anos (dados adquiridos pela Direção Regional de Estatística da Madeira).
+
+      </div>
+       Área do mapa 
+      <div id="map"></div>
+      <script src="js/mapa.js" defer></script>
+      <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/leaflet-fullscreen@1.0.2/dist/Leaflet.fullscreen.min.js"></script>
+      <script src="https://unpkg.com/leaflet-northarrow@1.3.0/src/L.Control.NorthArrow.js"></script>
+    </section>
+-->
+  <!-- SECÇÃO DO CONTACTO  -->
+  <section id="contacto"> 
+  <div class="container tm-container-contact">
+      <div class="row">
+          <div class="text-center col-12">
+              <h2 class="tm-section-title mb-4">Contact Me </h2>
+              <p class="mb-5">
+              </p><br>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <form action="https://formspree.io/f/xovjlvrz" method="post">
+              <input id="name" name="name" type="text" placeholder="Name" class="tm-input" required />
+              <input id="email" name="email" type="email" placeholder="Email" class="tm-input" required />
+              <textarea id="message" name="message" rows="8" placeholder="Send me a message !" class="tm-input" required></textarea>
+              <button type="submit" class="btn tm-btn-submit">Submit</button>
+            </form>
+          </div>
+          <div class="col-sm-12 col-md-6">
+              <div class="contact-item">
+                <a rel="nofollow" href="https://wa.me/+351963065112" class="item-link">
+                    <i class="far fa-2x fa-comment mr-4"></i>
+                    <span class="mb-0">Whatsapp (+351)963065112 </span>
+                </a>              
+              </div>
+              <div class="contact-item">
+                <a rel="nofollow" href="mailto:rodrigosousa1228@outlook.com" class="item-link">
+                    <i class="far fa-2x fa-envelope mr-4"></i>
+                    <span class="mb-0">rodrigosousa1228@outlook.com</span>
+                </a>              
+              </div>
+
+              <div class="contact-item">
+                <a rel="nofollow" href="https://www.linkedin.com/in/rodrigo-sousa-b10200233/" class="item-link">
+                    <i class="fas fa-2x fa-phone-square mr-4"></i>
+                    <span class="mb-0"> LinkedIn</span>
+                </a>              
+              </div>
+              <div class="contact-item">&nbsp;</div>
+          </div>
+      </div>
+    </div>
+      <footer class="text-center small tm-footer">
+        <p class="mb-0">
+        2026 &copy; Rodrigo Sousa
+        - <a rel="nofollow" href="https://sigarra.up.pt/flup/pt/cur_geral.cur_view?pv_curso_id=461" title="HTML templates">MSc Geographic Information Systems and Urban Planning</a></p>
+      </footer>
+    </section>
+</body>
+<script>
+  function showBioPanel(panel) {
+    document.getElementById('panel-bio').style.display = panel === 'bio' ? 'block' : 'none';
+    document.getElementById('panel-cloud').style.display = panel === 'cloud' ? 'block' : 'none';
+    document.getElementById('btn-bio').classList.toggle('active', panel === 'bio');
+    document.getElementById('btn-cloud').classList.toggle('active', panel === 'cloud');
+  }
+</script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/main.js"> </script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@turf/turf"></script>
+
+<script>
+particlesJS('particles-js', {
+  "particles": {
+    "number": {
+      "value": 100,
+      "density": {
+        "enable": true,
+        "value_area": 750,
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "triangle"
+    },
+    "opacity": {
+      "value": 0.5
+    },
+    "size": {
+      "value": 3
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 1,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false
+    }
+  }
+});
+</script>
+
+</body>
+</html>

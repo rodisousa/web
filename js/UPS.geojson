@@ -1,0 +1,155 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.909314868337304,
+                    32.641881824960755
+                ]
+            },
+            "properties": {
+                "Id": 0,
+                "Piso": 0,
+                "Letter": "A"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.90953835741551,
+                    32.641888337631705
+                ]
+            },
+            "properties": {
+                "Id": 0,
+                "Piso": 0,
+                "Letter": "B"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.911056840413607,
+                    32.64181264810416
+                ]
+            },
+            "properties": {
+                "Id": 0,
+                "Piso": 0,
+                "Letter": "C"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.90948643540223,
+                    32.64189027263664
+                ]
+            },
+            "properties": {
+                "Id": 0,
+                "Piso": 1,
+                "Letter": "D"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.909634727250122,
+                    32.64188643081208
+                ]
+            },
+            "properties": {
+                "Id": 0,
+                "Piso": 3,
+                "Letter": "F"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.91039620946738,
+                    32.64182759975616
+                ]
+            },
+            "properties": {
+                "Id": 0,
+                "Piso": 1,
+                "Letter": "E"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.915604737793938,
+                    32.64103727352199
+                ]
+            },
+            "properties": {
+                "Id": 0,
+                "Piso": 9,
+                "Letter": "G"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.914944413327376,
+                    32.643193877192836
+                ]
+            },
+            "properties": {
+                "Id": 0,
+                "Piso": 9,
+                "Letter": "H"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.91222308016997,
+                    32.64562497273333
+                ]
+            },
+            "properties": {
+                "Id": 0,
+                "Piso": 9,
+                "Letter": "I"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.906107512999476,
+                    32.646356124893344
+                ]
+            },
+            "properties": {
+                "Id": 0,
+                "Piso": 9,
+                "Letter": "J"
+            }
+        }
+    ]
+}

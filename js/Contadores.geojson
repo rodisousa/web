@@ -1,0 +1,12 @@
+{"type":"FeatureCollection", "features":[
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-16.911596727087602,32.64174273888162]},"properties":{"Id":0,"Cont_ID":96118542,"PowerKW":602,"PowerKVA":0,"Hor":"-","Local":"Garre Marítima do Funchal","OBS":"Iluminação exterior e o edifício GMM"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-16.915079607131776,32.64131643573985]},"properties":{"Id":1,"Cont_ID":94891937,"PowerKW":63,"PowerKVA":41.4,"Hor":"TETRA-HORÁRIA","Local":"Fortaleza N.S.Conceição","OBS":"Alimenta a portaria e iluminação até à rotunda"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-16.917565912404363,32.64206243516358]},"properties":{"Id":2,"Cont_ID":72571138,"PowerKW":17.25,"PowerKVA":17.25,"Hor":"Simples","Local":"Rotunda H. Foster","OBS":"Localizado na Estação Elevatória"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-16.913441617058897,32.64388377378267]},"properties":{"Id":3,"Cont_ID":95933415,"PowerKW":63,"PowerKVA":41.4,"Hor":"TETRA-HORÁRIA","Local":"Cais Norte","OBS":"Zona junto à bandeira"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-16.912230646046325,32.64561815153753]},"properties":{"Id":0,"Cont_ID":93031931,"PowerKW":0,"PowerKVA":20.7,"Hor":"TRI-HOÁRIA","Local":"CNSL","OBS":"Localizado debaixo das escadas"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-16.91174795387327,32.64589664217906]},"properties":{"Id":0,"Cont_ID":8683300,"PowerKW":0,"PowerKVA":20.7,"Hor":"Simples","Local":"Marina do Funchal","OBS":""}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-16.90992259589188,32.64650519440414]},"properties":{"Id":0,"Cont_ID":90702822,"PowerKW":0,"PowerKVA":20.7,"Hor":"TRI-HOÁRIA","Local":"Marina do Funchal","OBS":"Relocalizado acordo com a nova planta"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-16.90667655057604,32.645731613436105]},"properties":{"Id":0,"Cont_ID":95933386,"PowerKW":0,"PowerKVA":41.4,"Hor":"TETRA-HORÁRIA","Local":"Cais de Recreio","OBS":""}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-16.90597385854548,32.64571621447132]},"properties":{"Id":0,"Cont_ID":88615228,"PowerKW":0,"PowerKVA":20.7,"Hor":"-","Local":"Cais 8","OBS":"Iluminação Cais 8 e tomadas"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-16.90632916137993,32.64636910113772]},"properties":{"Id":0,"Cont_ID":94891946,"PowerKW":0,"PowerKVA":41.4,"Hor":"TETRA-HORÁRIA","Local":"Praça do povo","OBS":"Iluminação praça do povo e sistemas de bombagem"}}
+]}

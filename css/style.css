@@ -1,0 +1,1012 @@
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0;
+}
+/* quando adicionamos margens e paddings, não afeta o tamanho do elemento de dentro */ 
+
+:root { 
+    --primary-color: #396ed0;  /* Define uma variável qualquer, neste caso uma cor (azul) usando 'primary-color'*/ 
+    --light-color: #a4a4d8;
+    --dark-color: #111; 
+}
+body {
+    font-family:'Montserrat', sans-serif; 
+    font-size: 16px; 
+    line-height: 1.5;
+    background:#ffffff;
+    overflow-x: hidden; /* Impede scroll lateral */
+    scroll-behavior: smooth; 
+  
+} /* Texto geral*/ 
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  z-index: 1; /* Disposição das camadas ((1)) para estar por cima do backgorund mas abaio dos elementos do swiper */
+}
+
+a { 
+    text-decoration:none;
+    color:#333;
+} /* css dos links (href) */
+
+ul { 
+    list-style:none;
+} /* css das listas (ul-li) */
+
+img { 
+    max-width:100%;
+} /* css das imagens */
+
+.logo-img {
+     max-width: 20%;
+     border-radius: 15%;
+} /* tamanho do logo inicial */
+
+.logo-img :hover{
+  transform: scale(1.15);
+  transition: 0.5s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* CSS NAVBAR */ 
+
+.navbar {
+    background: white;
+    padding: 20px; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    padding: 10px 20px;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8); /* Dark navbar by default */
+    color: white;
+    transition: background 0.3s ease-in-out; /* Smooth transition for background color */
+    z-index: 1000;
+    justify-content: space-between;
+}
+.navbar.transparent {
+    background: rgba(0, 0, 0, 0); /* Transparent background */
+  }
+
+/* Transparent navbar styling (when scrolling past the hero section) */
+.navbar.transparent-navbar {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    box-shadow: none; /* Remove any shadow effect for a cleaner transparent look */
+}
+
+  .nav-links ul {
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: var(--primary-color); /* Highlight color on hover */
+  }
+  
+  /* Add spacing for content below the navbar */
+  body {
+    padding-top: 120px;
+  }
+/* HERO SECTIONS*/ 
+
+.hero {
+    margin-bottom: 50px; 
+}
+
+.hero .container { 
+    background: url('../img/nepal.png') no repeat; 
+    background-size: contain;
+    background-position: center bottom;
+    height: 550px;
+}
+
+.hero .hero-content {
+    width:100%;
+    background:transparent;
+    transition: all 1s ease;
+}
+
+.hero .hero-text { 
+    width: 100%;
+    margin-bottom: 20px;
+}
+.hero .hero-img {
+        max-width: 45%; /* Tamanho da imagem  size */
+        height: auto; /* ratio largura/comprimento */
+        text-align: right;
+        border-radius: 10%;
+        transition: all 1s ease;
+}
+.hero-img:hover {
+  transform: scale(1.1);
+  transition: all 1s ease;
+}
+
+.hero .first {
+    display: flex;
+    align-items: flex-start; /* Alinha o texto com a imagem */
+    justify-content: space-between;
+}
+/* CSS - CONTAINER (Isto é, uma secção... )  */
+
+.container { 
+    max-width: 1400px; 
+    margin:0 auto; /* primeiro número é top e bottom; segundo número é direita e esquerda (neste caso automático) */
+    padding: 0 15px; /* para não ficar colados aos limites */
+    background:transparent;
+}
+
+
+/* CSS PARA A SECÇÃO DAS COMPETÊNCIAS #####START######*/
+.competencias {
+    text-align: center;
+    padding: 100px 0px;
+    background: url('../img/nepal.png') no-repeat center center/cover;
+    background-size: cover;
+    color:white;
+  }
+  .competencias .subtitle {
+    margin: 20px 0px 30px;
+    color: #ffffff;
+  }
+  
+  .swiper {
+    width: 100%;
+    margin: 0 auto;
+    background-size: cover;
+  }
+
+  .swiper-wrapper {
+    display: flex;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.2; /* Make side elements transparent by default */
+    transform: scale(0.05); /* Shrink side elements for a perspective effect */
+    transition: all 1s ease; /* Smooth transitions */
+  }
+  
+  .swiper-slide.swiper-slide-active,
+  .swiper-slide.swiper-slide-next,
+  .swiper-slide.swiper-slide-prev {
+    opacity: 1; /* Fully visible for active and adjacent elements */
+    transform: scale(1.2); /* Restore size for the current and adjacent elements */
+  }
+  
+  .competencias-item {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .competencias-item img {
+    border-radius: 50%;
+    margin-bottom: 15px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    transition: all 1s ease;
+    background-size: cover;
+  }
+  
+  .competencias-item img:hover {
+    transform:scale(1.3);
+    transition: 1s;
+  }
+
+  .competencias-item h4 {
+    margin: 10px 0 5px;
+    color: #fff;
+  }
+  
+  .competencias-item span {
+    color: #aaa;
+    font-size: 14px;
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #fff;
+  }
+  
+  .swiper-pagination {
+    margin-top: 50px;
+  }
+  
+  .swiper-pagination-bullet {
+    background: white;
+    opacity: 0.6;
+    transition:0.7s;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: #cc1d0d;
+    opacity: 5;
+  }
+
+/* CSS PARA A SECÇÃO DAS COMPETÊNCIAS #####END###### */
+
+/* BOTÕES */ 
+.btn {
+    display:inline-block;
+    padding: 13px 20px; 
+    background: (var(--primary-color));
+    color:#333;
+    font-weight: 400;
+    text-decoration: none; 
+    border: none;
+    border-radius: 10px;
+    cursor:pointer; 
+    transition: 0.5s;
+} 
+
+.btn:hover {
+    opacity: 09;
+
+}
+.btn-primary {
+    background:(var(--primary-color));
+    color:var(--dark-color);
+    text-align:  right;
+}
+.btn-light {
+    background:(var(--light-color));
+    color: var(--light-color);
+} 
+.btn-dark {
+    background:(var(--dark-color));
+    color: (var(--dark-color));
+}
+.btn-block {
+    display: block;
+    width: 100%;
+}
+.hero-buttons {
+    text-align:  right;
+    padding-right: 40px;
+    padding-top: 15px;
+}
+/* Text Classes*/ 
+
+.text-xxl { 
+    font-size: 2.5rem;
+    line-height: 1.2; 
+    font-weight: 600; 
+    margin: 40px 0 20px; 
+}
+
+.text-xl1 { 
+    font-size: 2.2rem;
+    line-height: 1.4; 
+    font-weight: normal; 
+    margin: 40px 0 20px; 
+    text-align: center;
+    padding-bottom: 20px;
+    color:rgb(34, 32, 32);
+}
+.text-xl { 
+  font-size: 2.2rem;
+  line-height: 1.4; 
+  font-weight: normal; 
+  margin: 40px 0 20px; 
+  text-align: center;
+  padding-bottom: 20px;
+}
+.text-large { 
+    font-size: 1.8rem;
+    line-height: 1.4; 
+    font-weight: normal; 
+    margin: 30px 0 20px; 
+}
+.text-medium { 
+    font-size: 1.1rem;
+    line-height: 1.4; 
+    font-weight: normal; 
+    margin: 20px 0 10px; 
+    width: 55%;
+    text-align: justify;
+}
+.text-small { 
+    font-size: 1rem;
+    line-height: 1.4; 
+    font-weight: normal; 
+    margin: 10px 0 5px; 
+    width: 55%;
+    text-align: justify;
+    line-height: 35px;
+}
+.text-center { 
+   text-align: center; 
+}
+
+/* Percurso académico CSS para lista com duas coluanas  */
+
+.academico {
+  padding: 20px ;
+  background-color: #ffffff;
+  background: linear-gradient(to bottom, #ffffff, #ffffff); /* Exemplo de gradiente */
+  /* Ou use uma imagem de fundo: */
+  /* background: url('caminho-da-imagem.jpg') no-repeat center center; */
+  background-size: cover; /* Ajusta o tamanho da imagem ao contêiner */
+  padding: px 0; /* Espaçamento para as secções */
+  box-shadow: none;
+}
+
+.containermapa {
+  padding: 20px ;
+  background-color: #ffffff;
+  background: linear-gradient(to bottom, #ffffff, #568e8c); /* Exemplo de gradiente */
+  /* Ou use uma imagem de fundo: */
+  /* background: url('caminho-da-imagem.jpg') no-repeat center center; */
+  background-size: cover; /* Ajusta o tamanho da imagem ao contêiner */
+  padding: 0px 0; /* Espaçamento para as secções */
+}
+.minimini {
+  padding: 20px ;
+
+}
+
+.academic-section, .professional-section {
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 1600px;
+  box-shadow: none;
+}
+
+
+.academico-list {
+  display:table;
+  margin-bottom: 20px;
+}
+
+.academico-item {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  align-items: center; /* Alinha o logo e o texto verticalmente no centro */
+}
+
+
+.academico-texto { 
+    font-size: 0.9rem;
+    line-height: 1.4; 
+    font-weight: normal; 
+    margin: 10px 0 5px; 
+    width: 55%;
+    text-align: justify;
+    line-height: 30px;
+    flex: 1;
+    padding-right: 20px;
+    color:rgb(32, 30, 30);
+}
+
+.academico-texto1 { 
+  font-size: 0.9rem;
+  line-height: 1.4; 
+  font-weight: normal; 
+  margin: 10px 0 5px; 
+  width: 55%;
+  text-align: justify;
+  line-height: 30px;
+  flex: 1;
+  padding-right: 20px;
+  color:rgb(38, 35, 35);
+
+}
+
+
+.logo {
+  width: 15%;
+  height: auto;
+  margin-right: 15px;
+  transition: 0.5s;
+}
+.logo :first-child {
+  padding-left: 30px;
+}
+
+.logo:hover {
+  transform: scale(1.3);
+} 
+
+ /* CSS PARA A VISUALIZAÇÃO DO MAPA */
+
+ /* Estilo geral para a secção */
+
+ /* dasdasd */
+#miniprojeto2 {
+  display: flex; /* Layout flexível para alinhar conteúdo e mapa lado a lado */
+  flex-direction: row; /* Alinha os itens na horizontal */
+  align-items: flex-start; /* Alinha os itens ao topo */
+  margin: 20px; /* Margens em torno da secção */
+  padding: 20px; /* Espaçamento interno */
+  border: 2px solid #2e469e; /* Borda para destacar a secção */
+  background-color: #f9f9f9; /* Cor de fundo leve */
+  gap: 20px; /* Espaço entre os elementos */
+}
+
+/* Área de informações à esquerda */
+#miniprojeto2 > h2 {
+  flex: 1; /* Ocupa o espaço necessário para o conteúdo */
+  text-align: left;
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#miniprojeto2 > h1 {
+  text-align: left;
+  font-size: 2em;
+  color: #2e469e;
+  margin-bottom: 15px;
+}
+
+/* Div do mapa */
+#mapaDIV {
+  flex: 1; /* Ocupa mais espaço que o conteúdo textual */
+  height: 550px; /* Altura fixa para o mapa */
+  width: 700px;
+  padding-left: 1100px;
+  border: 2px solid #010207; /* Borda para enquadrar o mapa */
+  border-radius: 10px; /* Bordas arredondadas */
+  margin: 20px; /* Margem ao redor do mapa */
+  z-index: 0;
+  margin-bottom:50px;
+}
+.info{
+  height: 100%;
+  width: 29.8%;
+  float: left;
+  z-index: 0;
+  margin-top: 60px;
+  margin-left: 60px;
+  text-align: justify;
+  border-bottom: none;
+  border-left: none;
+  font-size: 12px;
+  background-color: transparent;
+  font-size: 1.1rem; 
+  line-height: 1.6; 
+  font-weight: normal; 
+  text-align: left;
+  padding-left:20px;
+  color:grey;
+  line-height: 35px;
+}
+
+/* Contacto */
+
+#contacto {
+  color: white;
+  background-image: url(../img/contact.png);
+  background-color: white;
+  background-position: center; 
+  background-repeat: no-repeat;
+  min-height: 900px;
+  position: relative;
+  background-size: cover;
+  padding-bottom: 50px;
+  padding-top: 80px;
+}
+
+.contact-item {
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+
+.item-link {
+  display: flex;
+  align-items: center;
+}
+
+.item-link i,
+.item-link span {
+  color: white;
+  transition: all 0.3s ease;
+  margin-left:15px;
+}
+
+.item-link:hover i,
+.item-link:hover span {
+  color: #3496d8;
+}
+
+.tm-input {
+	margin: 0 0 20px 0;
+	width: 90%;
+  padding: 8px 20px;
+  border-radius: 6px;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+}
+
+.tm-btn-submit {
+	font-size: 0.9em;
+	color: #fff;
+	background-color: #369;
+	width: 50%;
+	margin-bottom: 60px;
+}
+
+.tm-btn-submit:hover {
+	color: #fff;
+	background-color: #38B;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
+}
+
+.tm-footer {
+  position: absolute;
+  bottom: 35px;
+  left: 0;
+  right: 0;
+  padding: 0 15px;
+}
+
+.tm-footer a {
+	color: #fff;
+}
+
+.tm-footer a:hover {
+	color: #9CF;
+}
+
+.tm-footer-link {
+  color: white;
+}
+
+.tm-footer-link:hover,
+.tm-footer-link:focus {
+  color: #38B;
+  text-decoration: none;
+}
+
+   /* SECÇÃO PERCURSO PROFISSIONAL */
+.section-profissional {
+  padding: 20px 20px;
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.section-p1 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.section-header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.section-header p {
+  font-size: 1.5rem;
+  color: #e63946;
+}
+
+.profissional {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.p2{
+  flex: 1;
+  min-width: 300px;
+  max-width: 350px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.p2 img {
+  width: 100%;
+  height: auto;
+}
+
+.p2 h2 {
+  font-size: 1.2rem;
+  margin: 15px;
+  color: #e63946;
+}
+
+.p2 p {
+  font-size: 1rem;
+  margin: 0 15px 15px 15px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.p2 a {
+  margin: 15px;
+  font-size: 1rem;
+  color: #e63946;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.p2 a:hover {
+  text-decoration: underline;
+}
+
+a.sitio-link {
+  color: rgb(36, 35, 35); 
+}
+
+a.sitio-link:hover {
+  color: #396ed0; 
+}
+
+a.sitio-link1 {
+  color: rgb(17, 15, 15); 
+}
+
+a.sitio-link1:hover {
+  color: #396ed0;
+}
+
+/* Right panel: image on top, CV button below */
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  flex-shrink: 0;
+}
+
+.botao {
+  width: 180px;
+  height: 45px;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 1px 1px rgba(107, 221, 215, 0.37);
+  padding: 5px 10px;
+  background: rgb(47,93,197);
+  background: linear-gradient(160deg, #1c5288 0%, #1c5288 5%, #1c5288 11%, #1c5288 57%, #1c5288 71%);
+  color: #fff;
+  font-weight: 505;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  filter: drop-shadow(0 0 10px #1c5288);
+  transition: .5s linear;
+  float: none;
+  margin: 0;
+}
+
+.botao .mysvg {
+  display: none;
+}
+
+.botao:hover {
+  width: 180px;
+  height: 45px;
+  border-radius: 15px;
+  transition: .5s linear;
+}
+
+.botao:hover .texto {
+  display: none;
+}
+
+.botao:hover .mysvg {
+  display: inline;
+}
+
+
+  #map { height: 80vh; 
+           margin-right:50px;
+           margin-bottom:50px;
+           border: 1.5px solid #495058; 
+           border-radius: 10px; 
+           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+           margin-left: 650px;
+
+    }
+    .north-arrow {
+        background-image: url('https://unpkg.com/leaflet-northarrow@1.3.0/src/arrow.png');
+        background-size: contain;
+        width: 40px;
+        height: 40px;
+        z-index: auto;
+    }
+
+    .custom-icon {
+      background-color: #ff4757;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      z-index: auto;
+    }
+
+    .storymaps {
+      width: 100%; /* Define a largura do iframe para 90% do container */
+      height: 50vh;  /* Ajuste conforme necessário */
+      display: flex;
+      max-width:85%; /* Define um limite máximo opcional */
+      border: none; /* Remove a borda */
+      border: 1px solid #1a539e;
+      box-shadow: 0px 5px 10px rgba(9, 38, 117, 0.2);
+      overflow:hidden;
+      margin:2rem 0; 
+    }
+    .storymap-container {
+      width: 100%;
+      height:auto; 
+      display: flex; /* Usa flexbox para centralizar */
+      justify-content: center; /* Centraliza horizontalmente */
+  }
+
+  /* =============== RESPONSIVE MEDIA QUERIES =============== */
+@media (min-width: 768px) {
+  /* Desktop Styles */
+  .hero .first {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+  }
+
+  .hero-img {
+      max-width: 30%;
+  }
+
+  .text-medium {
+      width: 55%;
+  }
+
+  .nav-links ul {
+      gap: 40px;
+  }
+
+  .academico-item {
+      flex-direction: row;
+      text-align: left;
+  }
+
+  .logo {
+      width: 15%;
+      margin-right: 15px;
+  }
+
+  #mapaDIV {
+      width: 70%;
+      height: 550px;
+      margin-left: 30%;
+  }
+
+  .info {
+      width: 30%;
+      float: left;
+  }
+
+  .botao {
+      width: 180px;
+      margin: 0;
+      float: none;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Mobile Styles */
+  .nav-links ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      padding: 20px;
+      flex-direction: column;
+  }
+
+  .nav-links.active {
+      display: flex;
+  }
+
+  .mobile-menu-btn {
+      display: block;
+  }
+
+  .text-xxl {
+      font-size: 2rem;
+  }
+
+  .text-xl {
+      font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-xxl {
+      font-size: 1.8rem;
+  }
+
+  .text-xl {
+      font-size: 1.5rem;
+  }
+
+  .hero-img {
+      max-width: 90%;
+  }
+
+  .storymaps {
+      height: 300px;
+  }
+}
+
+/* =============== BIO / WORD CLOUD TOGGLE PANEL =============== */
+
+/* Expand hero container to fit content naturally */
+.hero .container {
+  height: auto !important;
+  min-height: 550px;
+  padding-bottom: 40px;
+}
+
+.bio-panel {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Override the inherited 55% width — .bio-panel already constrains the space */
+.bio-panel .text-small {
+  width: 100%;
+}
+
+.panel-toggle {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.toggle-btn {
+  padding: 7px 22px;
+  border: 2px solid #396ed0;
+  border-radius: 20px;
+  background: transparent;
+  color: #396ed0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  transition: background 0.28s ease, color 0.28s ease, transform 0.2s ease;
+}
+
+.toggle-btn:hover {
+  background: #396ed0;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.toggle-btn.active {
+  background: #1c5288;
+  border-color: #1c5288;
+  color: #fff;
+}
+
+.panel-content {
+  transition: opacity 0.35s ease;
+}
+
+/* =============== WORD CLOUD =============== */
+
+.word-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px 18px;
+  padding: 10px 0 20px 0;
+  min-height: 200px;
+  line-height: 2;
+}
+
+.word-cloud .word {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  cursor: default;
+  position: relative;
+  transition: transform 0.25s cubic-bezier(.34,1.56,.64,1), color 0.25s ease;
+  will-change: transform;
+}
+
+.word-cloud .word:hover {
+  transform: scale(1.55) !important;
+  animation-play-state: paused !important;
+  color: #396ed0 !important;
+  z-index: 10;
+  text-shadow: 0 2px 12px rgba(57, 110, 208, 0.35);
+}
+
+
+/* ---- 8 distinct floating animations ---- */
+@keyframes wc-float1 {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-8px); }
+}
+@keyframes wc-float2 {
+  0%, 100% { transform: translateY(0px) rotate(-1.5deg); }
+  30%      { transform: translateY(-6px) rotate(1deg); }
+  70%      { transform: translateY(-3px) rotate(-0.5deg); }
+}
+@keyframes wc-float3 {
+  0%, 100% { transform: translateY(0px); }
+  40%      { transform: translateY(-10px); }
+  80%      { transform: translateY(-4px); }
+}
+@keyframes wc-float4 {
+  0%, 100% { transform: translateY(-3px); }
+  50%      { transform: translateY(5px); }
+}
+@keyframes wc-float5 {
+  0%, 100% { transform: translateY(0px) rotate(1deg); }
+  50%      { transform: translateY(-9px) rotate(-1deg); }
+}
+@keyframes wc-float6 {
+  0%, 100% { transform: translateY(-4px) rotate(0.5deg); }
+  60%      { transform: translateY(6px) rotate(-0.5deg); }
+}
+@keyframes wc-float7 {
+  0%, 100% { transform: translateY(0px); }
+  25%      { transform: translateY(-5px); }
+  75%      { transform: translateY(-8px); }
+}
+@keyframes wc-float8 {
+  0%, 100% { transform: translateY(2px); }
+  50%      { transform: translateY(-7px); }
+}

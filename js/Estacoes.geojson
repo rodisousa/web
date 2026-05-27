@@ -1,0 +1,22 @@
+{"type":"FeatureCollection", "features":[
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-16.892202166999937,32.64750598200004]},"properties":{"Estacao":"Observatório","Temp":20.3,"Precip":505.7}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-16.93316846099998,32.63636398000005]},"properties":{"Estacao":"Lido","Temp":20.6,"Precip":296.6}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-16.90620944899996,32.83454124800004]},"properties":{"Estacao":"Ponta de São Jorge","Temp":17.9,"Precip":721.8}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-16.928477855999972,32.735562838000085]},"properties":{"Estacao":"Areeiro","Temp":10.4,"Precip":1722.9}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-17.089261888999943,32.67929169400003]},"properties":{"Estacao":"Lugar de Baixo","Temp":20.8,"Precip":523.6}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-17.256817180999974,32.814044429000035]},"properties":{"Estacao":"Ponta do Pargo","Temp":18.1,"Precip":474.3}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-16.721658273999935,32.74406619000008]},"properties":{"Estacao":"Caniçal_PSL","Temp":19.1,"Precip":391.2}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-17.093935855999973,32.71300301500004]},"properties":{"Estacao":"Lombo da Terça","Temp":13.4,"Precip":1222}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-16.880395069999963,32.79661084800006]},"properties":{"Estacao":"Santana","Temp":16.1,"Precip":1024.3}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-17.037022944999933,32.79105000600004]},"properties":{"Estacao":"SVicente","Temp":18.6,"Precip":1174.5}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-17.058187706999945,32.75630771700004]},"properties":{"Estacao":"Bica da Cana","Temp":10.4,"Precip":2180.8}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-16.809946009999976,32.731487431000055]},"properties":{"Estacao":"Santo da Serra","Temp":14.1,"Precip":1260.3}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-17.016891210999972,32.660770126000045]},"properties":{"Estacao":"Quinta Grande","Temp":17.7,"Precip":598.5}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-16.91683485599998,32.722931027000065]},"properties":{"Estacao":"Chão do Areeiro","Temp":10.4,"Precip":1891.7}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-17.17011204299996,32.86643380800006]},"properties":{"Estacao":"Porto Moniz","Temp":19.4,"Precip":566.2}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-16.905178107999973,32.694978433000074]},"properties":{"Estacao":"Pico Alto","Temp":13.6,"Precip":943.6}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-16.78068963399994,32.695871834000044]},"properties":{"Estacao":"Sta. Catarina_Madeira","Temp":19.8,"Precip":552.5}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-16.906902870999943,32.67586831400007]},"properties":{"Estacao":"Jardins do Imperador","Temp":16.7,"Precip":1029.5}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-17.20448263399993,32.75105619900008]},"properties":{"Estacao":"Prazeres","Temp":16.3,"Precip":863.2}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-16.85855109499994,32.64787886400007]},"properties":{"Estacao":"Cancela","Temp":19.1,"Precip":479.2}}
+]}
